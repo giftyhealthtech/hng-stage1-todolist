@@ -8,7 +8,7 @@ This project was created as a lightweight front-end application for task managem
 
 ## Live Demo
 
-https://hng-stage1-todolist-6j1k2o5yl-oyelami-sekinat-s-projects.vercel.app/
+https://hng-stage1-todolist.vercel.app/
 
 ## Features
 

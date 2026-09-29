@@ -6,6 +6,10 @@ A clean and responsive to-do list application built with HTML, CSS, and JavaScri
 
 This project was created as a lightweight front-end application for task management. It is designed to be simple, fast, and easy to deploy on Vercel without requiring any build tools or package installation.
 
+## Live Demo
+
+https://hng-stage1-todolist-6j1k2o5yl-oyelami-sekinat-s-projects.vercel.app/
+
 ## Features
 
 - Add new tasks
@@ -45,5 +49,3 @@ Then visit:
 ```text
 http://localhost:3000
 ```
-
-## Deploy to Vercel

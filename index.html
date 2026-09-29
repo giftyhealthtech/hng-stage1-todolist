@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <meta
+      name="description"
+      content="A simple and elegant todo list web app built with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Productivity</p>
+          <h1>Todo List</h1>
+        </div>
+        <div class="header-actions">
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            🌙
+          </button>
+          <span id="taskCount" class="task-count" aria-live="polite">0 tasks</span>
+        </div>
+      </header>
+
+      <form id="todo-form" class="todo-form" aria-label="Add a new task">
+        <label class="sr-only" for="todo-input">Add a task</label>
+        <input
+          id="todo-input"
+          type="text"
+          name="todo"
+          maxlength="120"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+        />
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div class="filters" role="tablist" aria-label="Filter tasks">
+        <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">
+          All
+        </button>
+        <button class="filter-btn" data-filter="active" type="button" aria-pressed="false">
+          Active
+        </button>
+        <button class="filter-btn" data-filter="completed" type="button" aria-pressed="false">
+          Completed
+        </button>
+      </div>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+      <div class="footer-bar">
+        <span id="remainingTasks">0 remaining</span>
+        <button id="clearCompletedBtn" class="clear-btn" type="button">
+          Clear completed
+        </button>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
